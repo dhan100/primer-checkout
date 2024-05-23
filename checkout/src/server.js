@@ -27,7 +27,7 @@ const response = await fetch(url, {method: 'post', headers: { 'Content-Type': 'a
 body: JSON.stringify({
       // Create an orderId for this client session, keep track of it to receive updates through Webhooks.
       orderId: 'order-' + Math.random(),
-      currencyCode: 'EUR',
+      currencyCode: 'SGD',
       // emailAddress and billingAddress are required for 3DS
       customer: {
         emailAddress: "iamsekar@gmail.com",
@@ -40,7 +40,7 @@ body: JSON.stringify({
           postalCode: "560212",
           addressLine1: "Ang Mo Kio Avenue 3",
           countryCode: "SG",
-          city: "Berlin",
+          city: "Singapore",
           state: "Singapore"
         }
       },
@@ -55,7 +55,7 @@ body: JSON.stringify({
             quantity: 1,
           },
         ],
-     "countryCode":"GB",
+     "countryCode":"SG",
       }
       // Check all the other options at https://apiref.primer.io/v2/reference/create_client_side_token_client_session_post
     }),
